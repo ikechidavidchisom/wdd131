@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #008751;
+  --secondary-color: #f4f4f4;
+  --text-color: #222;
+  --border-style: 1px solid #ccc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.weather {
+  padding: 1rem;
+}
+
+.weather h2::after {
+  content: " ⛅";
+}
+
+footer {
+  background-color: #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .hero {
+    grid-column: 1 / span 2;
+  }
+}
