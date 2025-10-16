@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form-style.css" />
+  <script defer src="scripts/form-script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <form method="get" action="review.html">
+    <!-- Product Name -->
+    <label for="productName">*Product Name:</label>
+    <select id="productName" name="productName" required>
+      <option value="" disabled selected>Select a Product ...</option>
+      <!-- Options will be populated by JS -->
+    </select>
+
+    <!-- Overall Rating -->
+    <fieldset>
+      <legend>*Overall Rating:</legend>
+      <label><input type="radio" name="rating" id="star1" value="1" required />☆</label>
+      <label><input type="radio" name="rating" id="star2" value="2" />☆☆</label>
+      <label><input type="radio" name="rating" id="star3" value="3" />☆☆☆</label>
+      <label><input type="radio" name="rating" id="star4" value="4" />☆☆☆☆</label>
+      <label><input type="radio" name="rating" id="star5" value="5" />☆☆☆☆☆</label>
+    </fieldset>
+
+    <!-- Date of Installation -->
+    <label for="installDate">*Date of Installation:</label>
+    <input type="date" id="installDate" name="installDate" required />
+
+    <!-- Useful Features -->
+    <fieldset>
+      <legend>Useful Features:</legend>
+      <label><input type="checkbox" id="feature1" name="features" value="Easy Setup" /> Easy Setup</label>
+      <label><input type="checkbox" id="feature2" name="features" value="Durability" /> Durability</label>
+      <label><input type="checkbox" id="feature3" name="features" value="Design" /> Design</label>
+      <label><input type="checkbox" id="feature4" name="features" value="Performance" /> Performance</label>
+    </fieldset>
+
+    <!-- Written Review -->
+    <label for="review">Written Review:</label>
+    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+    <!-- User Name -->
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your name"/>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Review" />
+  </form>
+
+  <footer>
+    <p> Copyright &copy; 2025 Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+</body>
+</html>
