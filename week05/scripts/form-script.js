@@ -33,3 +33,5 @@ products.forEach(product => {
   option.textContent = product.name;
   select.appendChild(option);
 });
+
+document.getElementById('lastModified').textContent = document.lastModified;

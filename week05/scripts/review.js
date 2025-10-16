@@ -4,3 +4,5 @@ localStorage.setItem('reviewCount', count);
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('counter').textContent = `Reviews submitted: ${count}`;
 });
+
+document.getElementById('lastModified').textContent = document.lastModified;
