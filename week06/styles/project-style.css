@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #006400;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #1cb84b;
+}
+
+main {
+  padding: 2rem;
+}
+
+ img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input[type="submit"] {
+  background: #006400;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+  margin-top: 2rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan Your Trip</title>
+  <link rel="stylesheet" href="styles/project-style.css" />
+  <script defer src="scripts/project-script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Plan Your Trip to Nigeria</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="culture.html">Culture</a>
+      <a href="form.html">Plan Your Trip</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="tripForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="destination">Choose a Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="" disabled selected>Select a destination...</option>
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <input type="submit" value="Submit Plan" />
+    </form>
+
+    <p id="counter"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Travel Nigeria | All rights reserved</p>
+  </footer>
+</body>
+</html>
